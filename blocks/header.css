@@ -1,0 +1,15 @@
+.header{
+    width: 880px;
+    height: 74px;
+    margin: 0 auto;
+}
+
+.header_logo{
+    margin-top: 45px;
+}
+
+.header__underline{
+    border-bottom: 1px solid #ffff;
+    opacity: 70%;
+    margin: 41px 0 40px;
+}
