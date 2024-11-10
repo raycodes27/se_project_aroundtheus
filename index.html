@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Around the U.S.</title>
-    <link rel="stylesheet" href="pages/index.css"
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="pages/index.css">
 </head>
-<body>
-    <div class="page">
+<body class="page">
+    <div class="page__content">
         <header class="header">
             <img class="header_logo" src="images/imagesaroundtheus_logo.svg" alt="Around the world logo">
             
@@ -15,25 +16,25 @@
 
             </div>
         </header>
-        <div class="profile">
-            <img class="profile__picture" src="images/avatar.png" atl="Jaques Costeau photo">
-
-            <div class="profile__info">
-                <h1 class="profile__title">Jacques Costeau</h1>
-                
-                <button class="profile__edit-button"><img class="profile__edit-button-img" src="images/pencil_vector.svg"> </button>
-                
-                <p class="profile__description">Explorer</p>
-            </div>   
-            
-            
-        </div>
-        <!-- <button class="profile__button">
-
-        </button> -->
-
         <main class="content">
-            <div class="elements">
+            <section class="profile">
+                <img class="profile__img" src="images/avatar.png" atl="Jaques Costeau photo">
+
+                <div class="profile__info">
+                    <h1 class="profile__title">Jacques Costeau</h1>
+                    <button class="profile__edit-button">
+                        <img class="profile__edit-button-img" src="images/edit_button.svg" alt="Edit button icon"> 
+                    </button>
+                    <p class="profile__description">Explorer</p>
+                </div>
+
+                <button class="profile__add-button">
+                    <img class="profile__add-button-img" src="images/add_button.svg" atl="Add button icon">
+                </button>
+            </section> 
+
+
+                <!--  <div class="elements">
                 <ul class="cards">
                     <li class="cards__item">
 
@@ -54,12 +55,12 @@
                         
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </main>
 
-        <footer class="footer">
+        <!-- <footer class="footer">
             
-        </footer>
+        </footer>  -->
     </div>
 </body>
 </html>

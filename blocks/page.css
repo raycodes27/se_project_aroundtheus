@@ -1,11 +1,10 @@
-html{
-    background-color: #000;
-}
-
 
 .page{
-    /* background-color: #000; */
+    background-color: #000;
+    color: white; 
+}
+
+.page__content{
     max-width: 1280px;
     margin: 0 auto;
-    font-family: 'inter';
 }
