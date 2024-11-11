@@ -10,6 +10,7 @@
 .profile__img{
     width: 120px;
     height: 120px;
+    margin-right: 24px;
 }
 
 .profile__info{
@@ -36,7 +37,7 @@
     color: #fff;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21.78px;
+    line-height: 22px;
     margin: 0;
     grid-area: description;
     display: inline;
@@ -46,7 +47,7 @@
 .profile__edit-button{
     width: 24px;
     height: 24px;
-    margin: 15px 30px 0 0;
+    margin: 15px 0 0 0;
     border: 1px solid #fff;
     background-color: transparent;
     grid-area: button;
@@ -58,7 +59,7 @@
 }
 
 .profile__add-button{
-    width: 150px;
+    width: 150px; 
     height: 50px;
     border: 1px solid #fff;
     background-color: transparent;
