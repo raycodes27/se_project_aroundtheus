@@ -1,22 +1,18 @@
+
 .profile{
-    max-width: 880px;
-    height: 120px;
-    margin: 40px auto 0;
-    font-family: 'Inter';
     display: flex;
     align-items: center;
-
+    padding-top: 40px;
 }
-.profile__img{
+.profile__image{
     width: 120px;
     height: 120px;
+    object-fit: cover;
+    background-position: center;
     margin-right: 24px;
 }
 
 .profile__info{
-    width: 415px;
-    height: 77px;
-    margin-left: 30px;
     display: grid;
     grid-template-areas:
     "title button"
@@ -25,7 +21,6 @@
 }
 
 .profile__title{
-    color: #fff;
     font-size: 42px;
     line-height: 48px;
     font-weight: 500;
@@ -34,41 +29,69 @@
 }
 
 .profile__description{
-    color: #fff;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     margin: 0;
     grid-area: description;
-    display: inline;
     
 }
 
 .profile__edit-button{
     width: 24px;
     height: 24px;
-    margin: 15px 0 0 0;
     border: 1px solid #fff;
-    background-color: transparent;
+    background: transparent url("../images/edit_button.svg") center no-repeat;
     grid-area: button;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
 }
 
-.profile__edit-button-img{
-    width: 10px;
-    height: 10px;
+.profile__edit-button:hover {
+  opacity: 60%;
 }
+
 
 .profile__add-button{
     width: 150px; 
     height: 50px;
     border: 1px solid #fff;
-    background-color: transparent;
+    background: transparent url("../images/add_button.svg") center no-repeat;
     grid-area: button;
     margin-left: auto;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
 }
 
-.profile__add-button-img{
-    width: 22px;
-    height: 22px;
+.profile__add-button:hover {
+  opacity: 60%;
 }
 
+
+
+@media screen and (max-width:480px){
+    .profile{
+        flex-direction: column;
+
+    }
+
+    .profile__image{
+        margin-bottom: 30px;
+    }
+
+    .profile__info{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 10px 14px; 
+    }
+
+    .profile__add-button{
+        width: 100%;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+}
